@@ -1,0 +1,25 @@
+{
+  "presets": [
+    ["env", {"modules": false}],
+    "stage-2",
+    "react"
+  ],
+  "plugins": [
+    ["react-hot-loader/babel"],
+    ["transform-react-jsx-source"],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@Components": "./src/App/Components",
+          "@helpers": "./src/App/helpers",
+          "@App": "./src/App"
+        }
+      }
+    ]
+  ]
+}
+
+
+
+
